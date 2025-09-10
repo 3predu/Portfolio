@@ -1,9 +1,13 @@
+import { HomePage } from './Components/sections/HomePage';
+
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
+    <>
+      <main>
+        <HomePage />
+      </main>
+    </>
+  );
 }
 
-export default App
+export default App;
