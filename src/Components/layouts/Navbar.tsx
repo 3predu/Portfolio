@@ -7,7 +7,7 @@ const NavLinks = [
 ]
 
 export default function Navbar() {
-    const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
