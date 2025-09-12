@@ -26,7 +26,7 @@ export function HomePage() {
                     text={[
                         "Computer Science Student",
                         "UI | UX Designer",
-                        "Full-Sack Developer",
+                        "Aspiring Full-Stack Developer",
                         "React Developer",
                     ]}
                     typingSpeed={75}
@@ -35,8 +35,8 @@ export function HomePage() {
                 />
 
                 {/* 2. Tipografia e espaçamento responsivo no Parágrafo */}
-                <p className="text-sm sm:text-base md:text-lg text-center font-custom text-slate-400 mt-5 px-2 sm:px-6">
-                    Full-Stack Developer and UI/UX Designer. With experience in projects for the universities <a href="https://sti.ufrn.br/" className="underline hover:text-cyan-500"> STI | UFRN </a> and <a href="https://ufg.br/" className="underline hover:text-cyan-500">UFG</a>, I specialize in transforming ideas into digital reality, combining clean code and intuitive interfaces.
+                <p className="text-sm sm:text-base md:text-lg text-center font-custom text-slate-300 mt-5 px-2 sm:px-6">
+                    Web Developer and UI/UX Designer. With experience in projects for the universities <a href="https://sti.ufrn.br/" className="underline hover:text-cyan-500"> STI | UFRN </a> and <a href="https://ufg.br/" className="underline hover:text-cyan-500">UFG</a>, I specialize in transforming ideas into digital reality, combining clean code and intuitive interfaces.
                 </p>
 
                 {/* 3. Espaçamento responsivo e botão adaptável */}
