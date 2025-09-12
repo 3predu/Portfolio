@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 import { motion, AnimatePresence, type Variants } from "framer-motion";
-import { exit } from "process";
 
 const NavLinks = [
     { href: "#home", label: "Home" },
