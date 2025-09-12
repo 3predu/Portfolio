@@ -41,10 +41,22 @@ export function HomePage() {
 
                 {/* 3. Espaçamento responsivo e botão adaptável */}
                 <div className="flex justify-center items-center space-x-4 sm:space-x-6 mt-7">
-                    <a href="..." aria-label="GitHub" className="...">
+                    <a
+                        href="https://github.com/3predu"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white hover:text-cyan-400 transition-colors duration-300"
+                        aria-label="GitHub"
+                    >
                         <FaGithub size={32} />
                     </a>
-                    <a href="..." aria-label="LinkedIn" className="...">
+                    <a
+                        href="https://www.linkedin.com/in/3pedro-lucca/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white hover:text-cyan-400 transition-colors duration-300"
+                        aria-label="LinkedIn"
+                    >
                         <FaLinkedin size={32} />
                     </a>
 
