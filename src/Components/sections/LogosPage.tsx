@@ -1,14 +1,19 @@
-import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiVite, SiDotnet } from 'react-icons/si';
+import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiVite, SiDotnet, SiAdobeillustrator, SiJavascript, SiFigma } from 'react-icons/si';
+import { TbBrandCSharp } from "react-icons/tb";
 import LogoLoop from '../ui/LogoLoop';
 
 const techLogos = [
+    { node: <SiVite className='text-white' />, title: "Vite", href: "https://vite.dev/" },
     { node: <SiReact className='text-white' />, title: "React", href: "https://react.dev" },
     { node: <SiNextdotjs className='text-white' />, title: "Next.js", href: "https://nextjs.org" },
     { node: <SiTypescript className='text-white' />, title: "TypeScript", href: "https://www.typescriptlang.org" },
     { node: <SiTailwindcss className='text-white' />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
-    { node: <SiVite className='text-white' />, title: "Vite", href: "https://vite.dev/" },
     { node: <SiDotnet className='text-white' />, title: ".NET", href: "https://dotnet.microsoft.com/pt-br/" },
-    { node: <SiDotnet className='text-white' />, title: ".NET", href: "https://dotnet.microsoft.com/pt-br/" },
+    { node: <TbBrandCSharp className='text-white' />, title: "C#", href: "https://dotnet.microsoft.com/pt-br/languages/csharp" },
+    { node: <SiFigma className='text-white' />, title: "Figma", href: "https://www.figma.com" },
+    { node: <SiAdobeillustrator className='text-white' />, title: "Illustrator", href: "https://www.adobe.com/br/products/illustrator.html" },
+
+
 
 ];
 
@@ -24,7 +29,7 @@ export function LogosPage() {
         <div style={{ height: '200px', position: 'relative', overflow: 'hidden' }}>
             <LogoLoop
                 logos={techLogos}
-                speed={120}
+                speed={115}
                 direction="left"
                 logoHeight={55}
                 gap={50}
