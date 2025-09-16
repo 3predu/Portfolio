@@ -1,19 +1,22 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import DarkVeil from '../backgrounds/DarkVeil';
 import TextType from '../ui/TextType';
 import { ButtonCV } from '../ui/ButtonCV';
 import { FiDownload } from 'react-icons/fi';
+import DarkVeil from '../backgrounds/DarkVeil';
 
 export function HomePage() {
     return (
-        <section
-            id="home"
-            className="min-h-screen text-white flex flex-col justify-center items-center p-4 sm:p-6 md:p-8" // Espaçamento responsivo
+        <div
+            id='home'
+            className='h-screen relative text-white flex justify-center items-center'
         >
-            <DarkVeil />
-            <div id="side-info" className="w-full max-w-[670px] mx-auto text-center">
-
-                {/* 1. Tipografia responsiva no Título */}
+            {/* Background */}
+            <div className='absolute inset-0 z-0'>
+                <DarkVeil />
+            </div>
+            {/* Conteúdo */}
+            <div id="side-info" className="relative z-10 w-full max-w-[670px] text-center p-4">
+                {/* 1. Títuo */}
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-custom font-bold mb-4 flex flex-wrap justify-center gap-x-2">
                     Software {''}
                     <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-500">
@@ -34,12 +37,12 @@ export function HomePage() {
                     className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-custom font-normal mt-2" // Tipografia e margem
                 />
 
-                {/* 2. Tipografia e espaçamento responsivo no Parágrafo */}
+                {/* 2. texto */}
                 <p className="text-sm sm:text-base md:text-lg text-center font-custom text-slate-300 mt-5 px-2 sm:px-6">
                     Web Developer and UI/UX Designer. With experience in projects for the universities <a href="https://sti.ufrn.br/" className="underline hover:text-cyan-500"> STI | UFRN </a> and <a href="https://ufg.br/" className="underline hover:text-cyan-500">UFG</a>, I specialize in transforming ideas into digital reality, combining clean code and intuitive interfaces.
                 </p>
 
-                {/* 3. Espaçamento responsivo e botão adaptável */}
+                {/* 3. Botões Links */}
                 <div className="flex justify-center items-center space-x-4 sm:space-x-6 mt-7">
                     <a
                         href="https://github.com/3predu"
@@ -68,6 +71,6 @@ export function HomePage() {
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     );
 }

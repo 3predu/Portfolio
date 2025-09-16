@@ -1,6 +1,5 @@
 import React from 'react';
 
-// A tipagem continua a mesma e está correta.
 type ButtonProps = {
     children: React.ReactNode;
     className?: string;

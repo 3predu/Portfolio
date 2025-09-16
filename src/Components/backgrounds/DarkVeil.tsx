@@ -87,7 +87,7 @@ export default function DarkVeil({
     hueShift = 0,
     noiseIntensity = 0,
     scanlineIntensity = 0,
-    speed = 2,
+    speed = 0.5,
     scanlineFrequency = 0,
     warpAmount = 0,
     resolutionScale = 1
@@ -152,5 +152,5 @@ export default function DarkVeil({
             window.removeEventListener('resize', resize);
         };
     }, [hueShift, noiseIntensity, scanlineIntensity, speed, scanlineFrequency, warpAmount, resolutionScale]);
-    return <canvas ref={ref} className="fixed inset-0 -z-10" />;
+    return <canvas ref={ref} className="w-full h-full block" />;
 }

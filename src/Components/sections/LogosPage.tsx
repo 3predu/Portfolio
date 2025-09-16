@@ -38,6 +38,7 @@ export function LogosPage() {
                 fadeOut
                 fadeOutColor="#0b0b0b"
                 ariaLabel="Technology partners"
+                className='relative flex-col overflow-hidden'
             />
         </div>
     );
