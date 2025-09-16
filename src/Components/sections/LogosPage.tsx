@@ -1,4 +1,4 @@
-import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiVite, SiDotnet, SiAdobeillustrator, SiJavascript, SiFigma } from 'react-icons/si';
+import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiVite, SiDotnet, SiAdobeillustrator, SiFigma } from 'react-icons/si';
 import { TbBrandCSharp } from "react-icons/tb";
 import LogoLoop from '../ui/LogoLoop';
 
