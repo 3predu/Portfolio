@@ -50,7 +50,11 @@ export default function Navbar() {
 
     return (
         <header className="fixed top-0 left-0 right-0 z-50 px-4">
-            <nav className="relative mt-6 mx-auto max-w-6xl px-6 py-3 bg-black/30 backdrop-blur-lg rounded-3xl flex items-center justify-between">
+            <nav className="
+                    relative mt-6 mx-auto max-w-6xl px-6 py-3 flex items-center justify-between
+                    backdrop-blur-lg bg-black/50 rounded-full shadow-[inset_0_1px_0_0_rgba(255,255,255,0.2),0_2px_8px_0_rgba(0,0,0,0.16)]
+                "
+            >
                 {/* Logo */}
                 <a href="#home" className="flex-1 md:flex-none md:text-left">
                     <span className="font-mono font-bold text-lg sm:text-xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-pink-400 to-purple-500">
@@ -132,6 +136,6 @@ export default function Navbar() {
                     )}
                 </AnimatePresence>
             </nav>
-        </header>
+        </header >
     );
 }
