@@ -10,10 +10,6 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body{
   background-color: #000000;
 }
@@ -21,6 +17,9 @@ body{
 
 
 @layer base {
+   html {
+    @apply scroll-smooth scroll-pt-20;
+  }
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
