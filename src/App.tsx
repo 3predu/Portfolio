@@ -1,8 +1,8 @@
-import Squares from './Components/backgrounds/Squares';
-import Navbar from './Components/layouts/Navbar';
-import { AboutPage } from './Components/sections/AboutPage';
-import { HomePage } from './Components/sections/HomePage';
-import { LogosPage } from './Components/sections/LogosPage';
+import Squares from "./Components/backgrounds/Squares";
+import Navbar from "./Components/layouts/Navbar";
+import { AboutPage } from "./Components/sections/AboutPage";
+import { HomePage } from "./Components/sections/HomePage";
+import { LogosPage } from "./Components/sections/LogosPage";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
           borderColor="#271E37"
           squareSize={25}
           hoverFillColor="rgba(100, 100, 100, 0.2)"
-          direction='down'
+          direction="down"
         />
       </div>
       <Navbar />
