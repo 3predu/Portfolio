@@ -10,7 +10,6 @@ import {
 } from 'react';
 import type { ElementType } from 'react';
 import { gsap } from 'gsap';
-import { color } from 'framer-motion';
 
 
 interface TextTypeProps {
