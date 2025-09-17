@@ -1,5 +1,7 @@
 import { FaCodeBranch } from 'react-icons/fa';
 import { ButtonCV } from '../ui/ButtonCV';
+import TextType from '../ui/TextType';
+import { Avatar, AvatarFallback, AvatarImage } from '../ui/Avatar';
 
 export function AboutPage() {
     return (
@@ -15,13 +17,26 @@ export function AboutPage() {
             {/* Seção Principal (Texto e Imagem) */}
             <div className="flex flex-col md:flex-row items-center justify-center gap-12 max-w-6xl w-full mb-20">
                 {/* Bloco de Texto */}
-                <div className="flex-1 text-center md:text-left mb-8 md:mb-0">
+                <div className="flex-1 text-center md:text-left mb-8 md:mb-0 order-2 md:order-none">
                     <h3 className="text-3xl md:text-4xl font-bold mb-4">
-                        Hello World, I' m <br />
+                        <TextType
+                            text={[
+                                "Hello World! I'm",
+                                "Olá Mundo! Eu sou",
+                                "Здравствуйте, мир! Я —",
+                                "你好世界，我是",
+                                "やあ世界、私は",
+                                "안녕 세상아, 나는",
+                            ]}
+                            typingSpeed={75}
+                            pauseDuration={1500}
+                            className=""
+                            variant='gradient'
+                        />
                         <span className="text-white">Pedro Lucca</span>
                     </h3>
-                    <p className="text-md md:text-lg text-slate-300 leading-relaxed mb-6">
-                        Sou um desenvolvedor apaixonado por transformar ideias complexas em soluções digitais elegantes e eficientes. Com experiência em React, TypeScript e Tailwind CSS, adoro construir interfaces de usuário intuitivas e de alta performance. Meu foco é sempre em código limpo, modular e escalável, buscando constantemente novas tecnologias para aprimorar minhas habilidades e entregar projetos de impacto.
+                    <p className="text-md md:text-lg text-white leading-relaxed mb-6">
+                        Web Developer and UI/UX Designer. With experience in projects for the universities <a href="https://sti.ufrn.br/" className="underline hover:text-cyan-500"> STI | UFRN </a> and <a href="https://ufg.br/" className="underline hover:text-cyan-500">UFG</a>, I specialize in transforming ideas into digital reality, combining clean code and intuitive interfaces.
                     </p>
                     <ButtonCV href="#portfolio" className="bg-purple-600 hover:bg-purple-700 ">
                         <FaCodeBranch size={20} />
@@ -29,15 +44,12 @@ export function AboutPage() {
                     </ButtonCV>
                 </div>
 
-                {/* Imagem de Perfil */}
-                <div className="flex-none w-64 h-64 md:w-80 md:h-80 relative">
-                    <img
-                        src="https://via.placeholder.com/300/609B9B/FFFFFF?text=Sua+Foto" // Placeholder
-                        alt="Sua Foto de Perfil"
-                        className="rounded-full w-full h-full object-cover shadow-lg border-4 border-cyan-400/50"
-                    />
-                    {/* Efeito de anel externo como na referência */}
-                    <div className="absolute inset-0 rounded-full border-4 border-purple-500/50 animate-pulse-slow" />
+                {/* Avatar */}
+                <div className="order-1 md:order-none">
+                    <Avatar className="border-4 border-purple-500/50">
+                        <AvatarImage src="" />
+                        <AvatarFallback>PL</AvatarFallback>
+                    </Avatar>
                 </div>
             </div>
 
@@ -70,6 +82,6 @@ export function AboutPage() {
                     </a>
                 </div>
             </div>
-        </section>
+        </section >
     );
 }

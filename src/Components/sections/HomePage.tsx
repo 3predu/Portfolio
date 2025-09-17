@@ -24,7 +24,7 @@ export function HomePage() {
                     </span>
                 </h1>
 
-                {/* Subtítulo com um pouco de margem */}
+                {/* Subtítulo */}
                 <TextType
                     text={[
                         "Computer Science Student",
@@ -34,12 +34,13 @@ export function HomePage() {
                     ]}
                     typingSpeed={75}
                     pauseDuration={1500}
-                    className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-custom font-normal mt-2" // Tipografia e margem
+                    className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-custom font-normal mt-2"
+                    textColors={['#ffffff']}
                 />
 
                 {/* 2. texto */}
                 <p className="text-sm sm:text-base md:text-lg text-center font-custom text-slate-300 mt-5 px-2 sm:px-6">
-                    Web Developer and UI/UX Designer. With experience in projects for the universities <a href="https://sti.ufrn.br/" className="underline hover:text-cyan-500"> STI | UFRN </a> and <a href="https://ufg.br/" className="underline hover:text-cyan-500">UFG</a>, I specialize in transforming ideas into digital reality, combining clean code and intuitive interfaces.
+                    Transforming ideas into interactive and seamless digital experiences with cutting-edge frontend development.
                 </p>
 
                 {/* 3. Botões Links */}

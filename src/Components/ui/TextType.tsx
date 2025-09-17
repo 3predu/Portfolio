@@ -10,6 +10,7 @@ import {
 } from 'react';
 import type { ElementType } from 'react';
 import { gsap } from 'gsap';
+import { color } from 'framer-motion';
 
 
 interface TextTypeProps {
@@ -31,6 +32,7 @@ interface TextTypeProps {
     onSentenceComplete?: (sentence: string, index: number) => void;
     startOnVisible?: boolean;
     reverseMode?: boolean;
+    variant?: 'solid' | 'gradient'; // Adicionando dois valores
 }
 
 const TextType = ({
@@ -52,6 +54,7 @@ const TextType = ({
     onSentenceComplete,
     startOnVisible = false,
     reverseMode = false,
+    variant = 'solid', // Valor padrão
     ...props
 }: TextTypeProps & React.HTMLAttributes<HTMLElement>) => {
     const [displayedText, setDisplayedText] = useState('');
@@ -178,6 +181,9 @@ const TextType = ({
     const shouldHideCursor =
         hideCursorWhileTyping && (currentCharIndex < textArray[currentTextIndex].length || isDeleting);
 
+    const textStyle = variant === 'solid' ? { color: getCurrentTextColor() } : {};
+    const textClasses = variant === 'gradient' ? 'bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-500' : '';
+
     return createElement(
         Component,
         {
@@ -185,18 +191,20 @@ const TextType = ({
             className: `whitespace-pre-wrap tracking-tight ${className}`,
             ...props
         },
-        <span className="inline" style={{ color: getCurrentTextColor() }}>
+        <span className={`inline ${textClasses}`} style={textStyle}>
             {displayedText}
         </span>,
         showCursor && (
             <span
                 ref={cursorRef}
-                className={`ml-1 opacity-100 ${shouldHideCursor ? 'hidden' : ''} ${cursorClassName}`}
+                className={`ml-1 opacity-100 ${shouldHideCursor ? 'hidden' : ''} ${cursorClassName} ${textClasses}`}
+                style={textStyle}
             >
                 {cursorCharacter}
             </span>
         )
     );
 };
+
 
 export default TextType;
