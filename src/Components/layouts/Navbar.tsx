@@ -16,7 +16,6 @@ export default function Navbar() {
         setIsMenuOpen(!isMenuOpen);
     };
 
-    // 2. Adicionar o tipo 'Variants' nas constantes de animação
     const menuVariants: Variants = {
         hidden: { opacity: 0, y: -20 },
         visible: {
