@@ -1,23 +1,24 @@
-import { FaCodeBranch } from "react-icons/fa";
+import { FaCodeBranch, FaFolderOpen } from "react-icons/fa";
 import { ButtonCV } from "../ui/ButtonCV";
 import TextType from "../ui/TextType";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/Avatar";
 import { BsStars } from "react-icons/bs";
+import { StatisticCard } from "../ui/Cards";
 
 export function AboutPage() {
   return (
     <div
       id="about"
-      className="h-screen w-full max-w-screen-2xl mx-auto md:px-1 pt-24 md:pt-32 items-center text-white"
+      className="min-h-screen w-full max-w-screen-2xl mx-auto px-5 md:px-10 pt-20 md:pt-28 items-center text-white"
     >
       {/* Título da Seção */}
       <div className="text-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+        <h2 className="text-4xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-500">
             About Me
           </span>
         </h2>
-        <p className="text-md md:text-lg text-white mb-12 flex items-center justify-center gap-2">
+        <p className="text-base md:text-lg mb-10 md:mb-12 text-white flex items-center justify-center gap-2">
           <BsStars />
           Web Developer and Computer Science Student
           <BsStars />
@@ -25,7 +26,7 @@ export function AboutPage() {
       </div>
       <div className="w-full pt-6 sm:pt-10 relative">
         {/* Seção Principal (Bloco de texto + Avatar) */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-12 w-full mb-20">
+        <div className="gap-8 md:gap-12 mb-16 md:mb-20 flex flex-col md:flex-row items-center justify-between w-full">
           {/* Bloco de Texto */}
           <div className="max-w-2xl text-center md:text-left mb-8 md:mb-0 order-2 md:order-none">
             <h3 className="text-3xl md:text-4xl font-bold mb-4">
@@ -82,51 +83,30 @@ export function AboutPage() {
               <AvatarFallback>PL</AvatarFallback>
             </Avatar>
           </div>
+          {/* Cards estatísticas */}
         </div>
-
-        {/* Cards de Estatísticas */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
-          {/* Card 1: Total Projects */}
-          <div className="bg-black/30 backdrop-blur-sm p-6 rounded-lg text-center shadow-lg border border-slate-700/50 hover:border-cyan-400 transition-colors duration-300">
-            <div className="text-4xl font-bold text-cyan-400 mb-2">24</div>
-            <p className="text-sm text-slate-300 uppercase tracking-wide mb-4">
-              Total de Projetos
-            </p>
-            <a
-              href="#portfolio"
-              className="text-purple-400 hover:text-purple-500 flex items-center justify-center text-sm gap-1"
-            >
-              Ver detalhes <span className="text-lg">›</span>
-            </a>
-          </div>
-
-          {/* Card 2: Certificates */}
-          <div className="bg-black/30 backdrop-blur-sm p-6 rounded-lg text-center shadow-lg border border-slate-700/50 hover:border-cyan-400 transition-colors duration-300">
-            <div className="text-4xl font-bold text-cyan-400 mb-2">3</div>
-            <p className="text-sm text-slate-300 uppercase tracking-wide mb-4">
-              Certificados
-            </p>
-            <a
-              href="#certificates"
-              className="text-purple-400 hover:text-purple-500 flex items-center justify-center text-sm gap-1"
-            >
-              Ver detalhes <span className="text-lg">›</span>
-            </a>
-          </div>
-
-          {/* Card 3: Years of Experience */}
-          <div className="bg-black/30 backdrop-blur-sm p-6 rounded-lg text-center shadow-lg border border-slate-700/50 hover:border-cyan-400 transition-colors duration-300">
-            <div className="text-4xl font-bold text-cyan-400 mb-2">1.5</div>
-            <p className="text-sm text-slate-300 uppercase tracking-wide mb-4">
-              Anos de Experiência
-            </p>
-            <a
-              href="#experience"
-              className="text-purple-400 hover:text-purple-500 flex items-center justify-center text-sm gap-1"
-            >
-              Ver detalhes <span className="text-lg">›</span>
-            </a>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 w-full mb-5">
+          <StatisticCard
+            icon={FaFolderOpen}
+            title={"Projects"}
+            subtitle={"Innovative solutions"}
+            value={24}
+            href={"#portfolio"}
+          />
+          <StatisticCard
+            icon={FaFolderOpen}
+            title={"Certificates"}
+            subtitle={"Professional skills"}
+            value={3}
+            href={"#certificates"}
+          />
+          <StatisticCard
+            icon={FaFolderOpen}
+            title={"Experience"}
+            subtitle={"Continuous journey"}
+            value={2.5}
+            href={"#experience"}
+          />
         </div>
       </div>
     </div>
