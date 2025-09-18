@@ -69,7 +69,7 @@ export function AboutPage() {
             {/* Botão */}
             <ButtonCV
               href="#portfolio"
-              className="inline-flex items-center bg-purple-700 hover:bg-purple-700/70"
+              className="inline-flex items-center"
             >
               <FaCodeBranch size={20} />
               View Projects
