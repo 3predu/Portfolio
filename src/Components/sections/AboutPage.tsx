@@ -69,7 +69,7 @@ export function AboutPage() {
             {/* Botão */}
             <ButtonCV
               href="#portfolio"
-              className="inline-flex items-center bg-purple-600 hover:bg-purple-700"
+              className="inline-flex items-center bg-purple-700 hover:bg-purple-700/70"
             >
               <FaCodeBranch size={20} />
               View Projects
@@ -78,13 +78,13 @@ export function AboutPage() {
 
           {/* Avatar */}
           <div className="order-1 md:order-none">
-            <Avatar className="border-4 border-purple-500/50">
-              <AvatarImage src="" />
+            <Avatar className="border-[0.5px] border-purple-500/50 bg-purple-600 shadow-xl shadow-purple-600/70">
+              <AvatarImage src="https://github.com/3predu.png" />
               <AvatarFallback>PL</AvatarFallback>
             </Avatar>
           </div>
-          {/* Cards estatísticas */}
         </div>
+        {/* Cards estatísticas */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 w-full mb-5">
           <StatisticCard
             icon={FaFolderOpen}
