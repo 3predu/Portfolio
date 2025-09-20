@@ -5,6 +5,9 @@ export default {
 		"./index.html",
 		"./src/**/*.{js,ts,jsx,tsx}",
 	],
+	safelist: [
+		'group-hover/item:scale-120',
+	],
 	theme: {
 		extend: {
 			fontFamily: {

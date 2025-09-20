@@ -104,7 +104,7 @@ export function AboutPage() {
             icon={FaFolderOpen}
             title={"Experience"}
             subtitle={"Continuous journey"}
-            value={2.5}
+            value={1.5}
             href={"#experience"}
           />
         </div>

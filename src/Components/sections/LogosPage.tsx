@@ -73,14 +73,14 @@ export function LogosPage() {
         logos={techLogos}
         speed={115}
         direction="left"
-        logoHeight={55}
+        logoHeight={60}
         gap={50}
         pauseOnHover
-        scaleOnHover
-        fadeOut
+        scaleOnHover={true}
+        fadeOut={true}
         fadeOutColor="#0b0b0b"
         ariaLabel="Technology partners"
-        className="relative flex-col overflow-hidden"
+        className="relative flex-col"
       />
     </div>
   );
