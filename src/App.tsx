@@ -7,12 +7,11 @@ import { LogosPage } from "./Components/sections/LogosPage";
 function App() {
   return (
     <>
-      <div className="fixed inset-0 z-1 pointer-events-none">
+      <div className="fixed inset-0 z-[-1]">
         <Squares
           speed={0.3}
           borderColor="#271E37"
           squareSize={25}
-          hoverFillColor="rgba(153, 51, 153)"
           direction="down"
         />
       </div>
