@@ -3,7 +3,7 @@ import { ButtonCV } from "../ui/ButtonCV";
 import TextType from "../ui/TextType";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/Avatar";
 import { BsStars } from "react-icons/bs";
-import { StatisticCard } from "../ui/Cards";
+import { StatisticCard } from "../ui/StatisticCard";
 
 export function AboutPage() {
   return (
@@ -108,6 +108,10 @@ export function AboutPage() {
             href={"#experience"}
           />
         </div>
+      </div>
+      {/*Sessão Educação*/}
+      <div>
+                
       </div>
     </div>
   );
