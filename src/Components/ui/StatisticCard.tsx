@@ -18,7 +18,7 @@ export function StatisticCard({
     href,
 }: StatisticCardProps) {
     return (
-        < SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(147, 51, 234, 1)" >
+        < SpotlightCard className="custom-spotlight-card hover:scale-[1.01] hover:shadow-[0_0_20px_5px_rgba(139,92,246,0.25)] hover:border-indigo-300" spotlightColor="rgba(147, 51, 234, 1)" >
             <a
                 href={href}
                 className="bg-slate-800/50 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-slate-700/50 flex items-center gap-6"

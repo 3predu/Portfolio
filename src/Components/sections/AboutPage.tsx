@@ -1,9 +1,10 @@
-import { FaCodeBranch, FaFolderOpen } from "react-icons/fa";
+import { FaCode, FaCodeBranch, FaCompass } from "react-icons/fa";
 import { ButtonCV } from "../ui/ButtonCV";
 import TextType from "../ui/TextType";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/Avatar";
 import { BsStars } from "react-icons/bs";
 import { StatisticCard } from "../ui/StatisticCard";
+import { AiFillCode } from "react-icons/ai";
 
 export function AboutPage() {
   return (
@@ -87,31 +88,31 @@ export function AboutPage() {
         {/* Cards estatísticas */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 w-full mb-5">
           <StatisticCard
-            icon={FaFolderOpen}
+            icon={AiFillCode}
             title={"Projects"}
             subtitle={"Innovative solutions"}
             value={24}
             href={"#portfolio"}
           />
           <StatisticCard
-            icon={FaFolderOpen}
-            title={"Certificates"}
-            subtitle={"Professional skills"}
-            value={3}
+            icon={FaCompass}
+            title={"Yeras of experience"}
+            subtitle={"Continuous learn journey"}
+            value={1}
             href={"#certificates"}
           />
           <StatisticCard
-            icon={FaFolderOpen}
-            title={"Experience"}
-            subtitle={"Continuous journey"}
-            value={1.5}
+            icon={FaCode}
+            title={"Tech Stacks"}
+            subtitle={"Continuous learn journey"}
+            value={12}
             href={"#experience"}
           />
         </div>
       </div>
       {/*Sessão Educação*/}
       <div>
-                
+
       </div>
     </div>
   );
