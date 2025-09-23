@@ -5,6 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "../ui/Avatar";
 import { BsStars } from "react-icons/bs";
 import { StatisticCard } from "../ui/StatisticCard";
 import { AiFillCode } from "react-icons/ai";
+import { EducationCard } from "../ui/EducationCard";
 
 export function AboutPage() {
   return (
@@ -112,8 +113,36 @@ export function AboutPage() {
       </div>
       {/*Sessão Educação*/}
       <div>
-
+        <div className="p-6 bg-slate-800/50 backdrop-blur-sm rounded-lg shadow-lg border border-slate-700/50">
+          <div className="text-white text-2xl sm:text-2xl md:text-3xl font-custom font-semibold mb-4 sm:mb-6 text-center">
+            <h1>Education</h1>
+          </div>
+          <div>
+            <EducationCard
+              logo="./public/logotipo-ucb.png"
+              href="https://ucb.catolica.edu.br/"
+              NameInstitution="Catholic University of Brasília"
+              degree="Bachelor's Degree in Computer Science"
+              period="Ago 2025 - Fev 2028"
+            />
+            <EducationCard
+              logo="./public/logotipo-ufrn.png"
+              href="https://www.ufrn.br/"
+              NameInstitution="Federal University of Rio Grande do Norte"
+              degree="Bachelor's Degree in Science and Technology"
+              period="Ago 2021 - Incomplete"
+            />
+            <EducationCard
+              logo="./public/logotipo-imd2.jpg"
+              href="https://www.metropoledigital.ufrn.br/portal/"
+              NameInstitution="Metrópole Digital Institute"
+              degree="Nanodegree, Web Developer"
+              period="Mar 2020"
+              grade="Grade | 8.87"
+            />
+          </div>
+        </div>
       </div>
-    </div>
+    </div >
   );
 }
