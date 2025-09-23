@@ -119,21 +119,21 @@ export function AboutPage() {
           </div>
           <div>
             <EducationCard
-              logo="./public/logotipo-ucb.png"
+              logo="/public/logotipo-ucb.png"
               href="https://ucb.catolica.edu.br/"
               NameInstitution="Catholic University of Brasília"
               degree="Bachelor's Degree in Computer Science"
               period="Ago 2025 - Fev 2028"
             />
             <EducationCard
-              logo="./public/logotipo-ufrn.png"
+              logo="/public/logotipo-ufrn.png"
               href="https://www.ufrn.br/"
               NameInstitution="Federal University of Rio Grande do Norte"
               degree="Bachelor's Degree in Science and Technology"
               period="Ago 2021 - Incomplete"
             />
             <EducationCard
-              logo="./public/logotipo-imd2.jpg"
+              logo="/public/logotipo-imd2.jpg"
               href="https://www.metropoledigital.ufrn.br/portal/"
               NameInstitution="Metrópole Digital Institute"
               degree="Nanodegree, Web Developer"
