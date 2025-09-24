@@ -33,6 +33,7 @@ export function HomePage() {
           pauseDuration={1500}
           className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-custom font-normal mt-2"
           textColors={["#ffffff"]}
+          cursorCharacter={"|"}
         />
 
         {/* 2. texto */}
@@ -42,12 +43,12 @@ export function HomePage() {
         </p>
 
         {/* 3. Botões Links */}
-        <div className="flex justify-center items-center space-x-4 sm:space-x-6 mt-7">
+        <div className="flex justify-center items-center mt-7 gap-1">
           <a
             href="https://github.com/3predu"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white hover:text-cyan-400 transition-colors duration-300"
+            className="text-white hover:text-cyan-400 transition-colors duration-300 m-1"
             aria-label="GitHub"
           >
             <FaGithub size={32} />
@@ -56,16 +57,16 @@ export function HomePage() {
             href="https://www.linkedin.com/in/3pedro-lucca/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white hover:text-cyan-400 transition-colors duration-300"
+            className="text-white hover:text-cyan-400 transition-colors duration-300 m-1"
             aria-label="LinkedIn"
           >
             <FaLinkedin size={32} />
           </a>
 
-          <div>
+          <div className="ml-2">
             <ButtonCV href="/curriculo.pdf" download="Pedro-Lucca.pdf">
               <FiDownload size={20} />
-              <span className="hidden sm:inline ml-2">Download CV</span>
+              <span className="hidden sm:inline">Download CV</span>
             </ButtonCV>
           </div>
         </div>

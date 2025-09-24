@@ -35,7 +35,7 @@ export default function Navbar() {
     exit: { opacity: 0, y: -10 },
   };
   {
-    /*Definindo a animação botão navbar*/
+    {/*Definindo a animação botão navbar*/ }
   }
   const iconVariants: Variants = {
     hidden: { opacity: 0, rotate: -90, scale: 0.8 }, // estado inicial
@@ -70,7 +70,7 @@ export default function Navbar() {
         </a>
 
         {/* Links Desktop */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="font-custom hidden md:flex items-center gap-8">
           {NavLinks.map((link) => (
             <a
               key={link.href}
@@ -137,7 +137,7 @@ export default function Navbar() {
                 variants={linkVariants}
                 href={link.href}
                 onClick={toggleMenu}
-                className="text-lg text-slate-200 hover:text-cyan-400"
+                className="text-lg text-slate-200 transition-colors font-custom w-full block py-2"
               >
                 {link.label}
               </motion.a>
