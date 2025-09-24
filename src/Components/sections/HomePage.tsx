@@ -2,27 +2,19 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import TextType from "../ui/TextType";
 import { ButtonCV } from "../ui/ButtonCV";
 import { FiDownload } from "react-icons/fi";
-//import DarkVeil from '../backgrounds/DarkVeil';
 
 export function HomePage() {
   return (
     <div
       id="home"
-      className="h-screen relative text-white flex justify-center items-center"
+      className="h-screen relative px-5 md:px-8 xl:px-16 text-white flex justify-center items-center"
     >
-      {/* Background */}
-      {/*
-            <div className='absolute inset-0 z-0'>
-                <DarkVeil />
-            </div>
-            */}
-      {/* Conteúdo */}
       <div
         id="side-info"
         className="relative z-10 w-full max-w-[670px] text-center p-4"
       >
         {/* 1. Títuo */}
-        <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-custom font-bold mb-4 flex flex-wrap justify-center gap-x-2">
+        <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-custom font-bold flex flex-wrap justify-center gap-x-2">
           Software {""}
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-500">
             Developer
