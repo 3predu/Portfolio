@@ -16,7 +16,7 @@ export function HomePage() {
         {/* 1. Títuo */}
         <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-custom font-bold flex flex-wrap justify-center gap-x-2">
           Software {""}
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-500">
+          <span className="bg-clip-text text-transparent bg-linear-to-r from-cyan-400 to-purple-500">
             Developer
           </span>
         </h1>

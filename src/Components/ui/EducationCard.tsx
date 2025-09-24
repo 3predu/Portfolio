@@ -22,7 +22,7 @@ export function EducationCard({
         <div className="grid grid-cols-1 gap-3 sm:gap-4 p-1">
             <SpotlightCard className="custom-spotlight-card hover:shadow-[0_0_20px_5px_rgba(139,92,246,0.25)] hover:border-indigo-300" spotlightColor="rgba(147, 51, 234, 1)">
                 <a className="flex flex-row items-center gap-2 sm:gap-3 sm:p-3 w-full p-6 
-                                    border rounded-lg border-slate-700/80 bg-black/70 backdrop-blur-sm hover:border-indigo-200
+                                    border rounded-lg border-slate-700/80 bg-black/70 backdrop-blur-xs hover:border-indigo-200
                                     transition-all duration-300
                                     "
                     href={href}

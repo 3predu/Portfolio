@@ -11,12 +11,12 @@ export function AboutPage() {
   return (
     <div
       id="about"
-      className="min-h-screen w-full max-w-screen-2xl mx-auto px-5 md:px-10 pt-20 md:pt-28 items-center text-white"
+      className="min-h-screen w-full max-w-(--breakpoint-2xl) mx-auto px-5 md:px-10 pt-20 md:pt-28 items-center text-white"
     >
       {/* Título da Seção */}
       <div className="text-center">
         <h2 className="text-4xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-500">
+          <span className="bg-clip-text text-transparent bg-linear-to-r from-cyan-400 to-purple-500">
             About Me
           </span>
         </h2>
@@ -30,7 +30,7 @@ export function AboutPage() {
         {/* Seção Principal (Bloco de texto + Avatar) */}
         <div className="gap-8 md:gap-12 mb-16 md:mb-20 flex flex-col md:flex-row items-center justify-between w-full">
           {/* Bloco de Texto */}
-          <div className="max-w-2xl text-center md:text-left mb-8 md:mb-0 order-2 md:order-none">
+          <div className="max-w-2xl text-center md:text-left mb-8 md:mb-0 order-2 md:order-0">
             <h3 className="text-3xl md:text-4xl font-bold mb-4">
               <TextType
                 text={[
@@ -79,7 +79,7 @@ export function AboutPage() {
           </div>
 
           {/* Avatar */}
-          <div className="order-1 md:order-none">
+          <div className="order-1 md:order-0">
             <Avatar className="border-[0.5px] border-purple-500/50 bg-purple-600 shadow-xl shadow-purple-600/70">
               <AvatarImage src="https://github.com/3predu.png" />
               <AvatarFallback>PL</AvatarFallback>
@@ -113,7 +113,7 @@ export function AboutPage() {
       </div>
       {/*Sessão Educação*/}
       <div>
-        <div className="p-6 bg-slate-800/50 backdrop-blur-sm rounded-lg shadow-lg border border-slate-700/50">
+        <div className="p-6 bg-slate-800/50 backdrop-blur-xs rounded-lg shadow-lg border border-slate-700/50">
           <div className="text-white text-2xl sm:text-2xl md:text-3xl font-custom font-semibold mb-4 sm:mb-6 text-center">
             <h1>Education</h1>
           </div>

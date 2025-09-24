@@ -64,7 +64,7 @@ export default function Navbar() {
       >
         {/* Logo */}
         <a href="#home" className="flex-1 md:flex-none md:text-left">
-          <span className="font-mono font-bold text-lg sm:text-xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-pink-400 to-purple-500">
+          <span className="font-mono font-bold text-lg sm:text-xl text-transparent bg-clip-text bg-linear-to-r from-cyan-400 via-pink-400 to-purple-500">
             pedroLucca.dev();
           </span>
         </a>

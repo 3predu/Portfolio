@@ -190,7 +190,7 @@ const TextType = ({
   const textStyle = variant === "solid" ? { color: getCurrentTextColor() } : {};
   const textClasses =
     variant === "gradient"
-      ? "bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-500"
+      ? "bg-clip-text text-transparent bg-linear-to-r from-cyan-400 to-purple-500"
       : "";
 
   return createElement(

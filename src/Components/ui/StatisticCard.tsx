@@ -21,14 +21,14 @@ export function StatisticCard({
         < SpotlightCard className="custom-spotlight-card hover:scale-[1.01] hover:shadow-[0_0_20px_5px_rgba(139,92,246,0.25)] hover:border-indigo-300" spotlightColor="rgba(147, 51, 234, 1)" >
             <a
                 href={href}
-                className="bg-slate-800/50 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-slate-700/50 flex items-center gap-6 hover:border-indigo-200"
+                className="bg-slate-800/50 backdrop-blur-xs p-6 rounded-lg shadow-lg border border-slate-700/50 flex items-center gap-6 hover:border-indigo-200"
             >
                 {/* Icone */}
-                <div className="bg-gradient-to-br from-purple-600 to-cyan-500 p-3 rounded-lg">
+                <div className="bg-linear-to-br from-purple-600 to-cyan-500 p-3 rounded-lg">
                     <Icon size={24} className="text-white" />
                 </div>
                 {/* Texto */}
-                <div className="flex-grow">
+                <div className="grow">
                     <p className="text-xs font-custom uppercase tracking-wider font-semibold">
                         {title}
                     </p>
