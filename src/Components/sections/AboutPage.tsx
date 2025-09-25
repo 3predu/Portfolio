@@ -6,12 +6,13 @@ import { BsStars } from "react-icons/bs";
 import { StatisticCard } from "../ui/StatisticCard";
 import { AiFillCode } from "react-icons/ai";
 import { Card } from "../ui/Card";
+import { AccordionCard } from "../layouts/AccordionCard";
 
 export function AboutPage() {
   return (
     <div
       id="about"
-      className="min-h-screen w-full max-w-(--breakpoint-2xl) mx-auto px-5 md:px-10 pt-20 md:pt-28 items-center text-white"
+      className="min-h-screen w-full max-w-(--breakpoint-2xl) mx-auto px-5 md:px-10 pt-20 md:pt-28 items-center text-white font-custom"
     >
       {/* Título da Seção */}
       <div className="text-center">
@@ -111,7 +112,7 @@ export function AboutPage() {
           />
         </div>
       </div>
-      {/*Sessão Educação*/}
+      {/*Sessão Educação e Experiência Profissional*/}
       <div>
         <div className="p-6 bg-slate-800/50 backdrop-blur-xs rounded-lg shadow-lg border border-slate-700/50">
           <div className="text-white text-2xl sm:text-2xl md:text-3xl font-custom font-semibold mb-4 sm:mb-6 text-center">
@@ -141,8 +142,20 @@ export function AboutPage() {
               grade="Grade | 8.87"
             />
           </div>
-          <div className="text-white text-2xl sm:text-2xl md:text-3xl font-custom font-semibold mb-4 sm:mb-6 text-center mt-8">
+          <div id="expirence" className="text-white text-2xl sm:text-2xl md:text-3xl font-custom font-semibold mb-4 sm:mb-6 text-center mt-8">
             <h1>Professional Expirence</h1>
+          </div>
+          <div id="experienceAccordion" className="space-y-4">
+            <AccordionCard
+              logo="/logotipo-sti.jpg"
+              position="Design System | Frontend Developer - Remote"
+              nameInstitution="STI | IT Department | UFRN"
+              period="Jul 2022 - 2023"
+              description="
+                Refactored Sass, Pug, and JavaScript files for the UFRN Design System by applying the BEM methodology. This initiative led to a file size reduction of up to 94% (from 10,000 to ~600 lines) and improved overall code readability, maintainability, and performance.
+                Proposed and designed the implementation of Web Components with JavaScript, creating a more modular, reusable, and scalable architecture for the project. Enhanced the accessibility of web components, ensuring compliance with WCAG 2.1 guidelines and improving the experience for visually impaired users.
+              "
+            />
           </div>
         </div>
       </div>
