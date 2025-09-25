@@ -5,7 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "../ui/Avatar";
 import { BsStars } from "react-icons/bs";
 import { StatisticCard } from "../ui/StatisticCard";
 import { AiFillCode } from "react-icons/ai";
-import { EducationCard } from "../ui/EducationCard";
+import { Card } from "../ui/Card";
 
 export function AboutPage() {
   return (
@@ -117,22 +117,22 @@ export function AboutPage() {
           <div className="text-white text-2xl sm:text-2xl md:text-3xl font-custom font-semibold mb-4 sm:mb-6 text-center">
             <h1>Education</h1>
           </div>
-          <div>
-            <EducationCard
+          <div id="educationCard" className="space-y-4">
+            <Card
               logo="/logotipo-ucb.png"
               href="https://ucb.catolica.edu.br/"
               NameInstitution="Catholic University of Brasília"
               degree="Bachelor's Degree in Computer Science"
               period="Ago 2025 - Fev 2028"
             />
-            <EducationCard
+            <Card
               logo="/logotipo-ufrn.png"
               href="https://www.ufrn.br/"
               NameInstitution="Federal University of Rio Grande do Norte"
               degree="Bachelor's Degree in Science and Technology"
               period="Ago 2021 - Incomplete"
             />
-            <EducationCard
+            <Card
               logo="/logotipo-imd2.jpg"
               href="https://www.metropoledigital.ufrn.br/portal/"
               NameInstitution="Metrópole Digital Institute"
@@ -140,6 +140,9 @@ export function AboutPage() {
               period="Mar 2020"
               grade="Grade | 8.87"
             />
+          </div>
+          <div className="text-white text-2xl sm:text-2xl md:text-3xl font-custom font-semibold mb-4 sm:mb-6 text-center mt-8">
+            <h1>Professional Expirence</h1>
           </div>
         </div>
       </div>
