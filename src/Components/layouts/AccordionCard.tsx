@@ -20,7 +20,6 @@ export function AccordionCard({ logo, nameInstitution, position, period, descrip
             type="single"
             collapsible
             className="w-full"
-            defaultValue="item-1"
         >
             <SpotlightCard className="custom-spotlight-card hover:shadow-[0_0_20px_5px_rgba(139,92,246,0.25)] hover:border-indigo-300" spotlightColor="rgba(147, 51, 234, 1)">
                 <AccordionItem
