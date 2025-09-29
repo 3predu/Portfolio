@@ -98,7 +98,7 @@ export function AboutPage() {
           />
           <StatisticCard
             icon={FaCompass}
-            title={"Yeras of experience"}
+            title={"Years of experience"}
             subtitle={"Continuous learn journey"}
             value={1}
             href={"#certificates"}
